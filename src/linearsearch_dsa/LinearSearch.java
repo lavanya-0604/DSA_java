@@ -1,4 +1,5 @@
 package linearsearch_dsa;
+//linear search is for the unsorted array
 //linear search in arrays
 public class LinearSearch {
     public static void main(String[]args) {

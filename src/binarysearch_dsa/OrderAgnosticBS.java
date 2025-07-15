@@ -15,6 +15,7 @@ public class OrderAgnosticBS {
             if(arr[mid]==target){
                 return mid;
             }
+            //for ascending order
            if(isAsc==true) {
                if (arr[mid] > target) {
                    right = mid - 1;
@@ -22,6 +23,7 @@ public class OrderAgnosticBS {
                    left = mid + 1;
                }
            }
+           //for descending order
            else{
                if (arr[mid] < target) {
                    right = mid - 1;

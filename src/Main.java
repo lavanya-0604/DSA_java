@@ -1,11 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-import java.util.Arrays;
-public class Main {
-    public static void main(String[] args) {
-        int[]arr = {23,12,90,45,11,20};
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
 
-    }
+
+class Main {
+   public int sqrt(int x){
+       int start = 1;
+       int end = x;
+       int ans = 0;
+       while(start<=end){
+           int mid = start + (end - start)/2;
+           if(x==0 || x==1){
+               return x;
+           }
+           if(mid <= x/mid){
+               ans = mid;
+               start = mid +1;
+           }else{
+               end = mid - 1;
+           }
+       }
+       return ans;
+   }
 }
