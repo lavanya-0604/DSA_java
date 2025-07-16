@@ -5,18 +5,19 @@ package LeetCode;
 //linear search is avoided bcs of the time complexity
 public class mountainarray {
     public static void main(String[] args) {
-
+        int [] arr = {1,2,3,5,6,4,3,2};//refer notes for the logic
+        System.out.println(peakIndexInMountainArray(arr));
     }
-  public int peakIndexInMountainArray(int[] arr){
+  public static int peakIndexInMountainArray(int[] arr){
         int start = 0;
         int end = arr.length-1;
         while(start< end){
             int mid = start + (end - start)/2;
-            if(arr[mid]>arr[mid+1]){
+            if(arr[mid]>arr[mid+1]){//first check
                 //now we are in the decreasing order
                 //this may be the ans but look at the left
                 end = mid;
-            }else{
+            }else{//second check
                 //you are in part of increasing order
                 start = mid+1;//because we know mid+1 element > mid element
             }
