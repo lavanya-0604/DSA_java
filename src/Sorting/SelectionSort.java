@@ -1,5 +1,5 @@
 package Sorting;
-
+//selection sort is a technique of selecting an element and placing it in the correct index
 import java.util.Arrays;
 
 public class SelectionSort {
