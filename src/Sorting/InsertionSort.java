@@ -1,7 +1,5 @@
 package Sorting;
-
 import java.util.Arrays;
-
 //here we are partially sorting the array
 //Builds the sorted array one element at a time by inserting elements into their correct position.
 //For array [5, 3, 2, 4]:
